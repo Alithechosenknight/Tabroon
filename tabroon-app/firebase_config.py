@@ -17,7 +17,7 @@ firebase = pyrebase.initialize_app(firebase_config)
 auth = firebase.auth()
 
 # Firebase Admin (for Firestore)
-service_account_info = st.secrets["firebase"]
+service_account_info = st.secrets["firebase"]  # matches [firebase] in TOML
 cred = credentials.Certificate(dict(service_account_info))
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred, {
