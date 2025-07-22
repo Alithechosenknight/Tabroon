@@ -17,7 +17,7 @@ firebase_config = {
 
 
 # --- Load Firebase Admin from Streamlit secrets ---
-service_account_info = st.secrets["FIREBASE"]
+service_account_info = st.secrets["firebase"]
 cred = credentials.Certificate(dict(service_account_info))
 
 if not firebase_admin._apps:
