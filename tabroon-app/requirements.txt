@@ -1,0 +1,7 @@
+pyrebase4
+google-cloud-storage
+google-cloud-firestore
+firebase-admin
+streamlit
+Pillow
+setuptools
